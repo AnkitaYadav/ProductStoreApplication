@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ProductStoreApplication.Tests
+namespace ProductStore.Api.Tests
 {
     [TestClass]
     public class UnitTest1

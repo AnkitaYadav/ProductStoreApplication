@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8BA0D75D-B173-4F52-99B2-7818B8D57DF0}</ProjectGuid>
+    <ProjectGuid>{EFC28335-8712-4514-8689-50361EC2663F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProductStoreApplication.Tests</RootNamespace>
-    <AssemblyName>ProductStoreApplication.Tests</AssemblyName>
+    <RootNamespace>ProductStore.Api.Tests</RootNamespace>
+    <AssemblyName>ProductStore.Api.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -52,9 +52,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProductStoreApplication\ProductStoreApplication.csproj">
-      <Project>{1A7DCE39-7453-4584-AD14-542FD01A861B}</Project>
-      <Name>ProductStoreApplication</Name>
+    <ProjectReference Include="..\ProductStore.Api\ProductStore.Api.csproj">
+      <Project>{337E9B20-2C4A-4F8C-BCB5-21A683D42793}</Project>
+      <Name>ProductStore.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
