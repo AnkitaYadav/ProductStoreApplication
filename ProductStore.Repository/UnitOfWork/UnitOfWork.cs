@@ -1,19 +1,30 @@
-﻿using ProductStore.Interface.Repository;
+﻿using ProductStore.Data;
+using ProductStore.Interface.Repository;
+using ProductStore.Interface.UnitOfWork;
 using ProductStore.Repository.Repository;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.SqlServer;
 using System.Linq;
 namespace ProductStore.Repository.UnitOfWork
 {
-   public  class UnitOfWork
+    public class EF_Configuration : DbConfiguration
     {
-        private  DbContext dbcontext;
-        public UnitOfWork(DbContext context)
+        public EF_Configuration()
+        {
+            SetProviderServices(
+                SqlProviderServices.ProviderInvariantName,
+                SqlProviderServices.Instance);
+        }
+    }
+    public  class UnitOfWork:IUnitOfWork
+    {
+        private  ProductStoreContext dbcontext;
+        public UnitOfWork(ProductStoreContext context)
         {
             dbcontext = context;
         }
-
         public Dictionary<Type, object> Repositories = new Dictionary<Type, object>();
         public IRepository<T> Repository<T>() where T : class
         {

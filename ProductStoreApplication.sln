@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructre", "Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductStore.Interface", "ProductStore.Interface\ProductStore.Interface.csproj", "{8DB3861C-38C0-4213-A4BB-8EFBE65C70CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductStore.DependencyInjection", "ProductStore.DependencyInjection\ProductStore.DependencyInjection.csproj", "{DF8B79D0-CF0A-4785-9454-FBECB42B42B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductStore.Entities", "ProductStore.Entities\ProductStore.Entities.csproj", "{5A06EE12-720A-4549-BC0F-F3AD6AF70D71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{8DB3861C-38C0-4213-A4BB-8EFBE65C70CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DB3861C-38C0-4213-A4BB-8EFBE65C70CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DB3861C-38C0-4213-A4BB-8EFBE65C70CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8B79D0-CF0A-4785-9454-FBECB42B42B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8B79D0-CF0A-4785-9454-FBECB42B42B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8B79D0-CF0A-4785-9454-FBECB42B42B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8B79D0-CF0A-4785-9454-FBECB42B42B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A06EE12-720A-4549-BC0F-F3AD6AF70D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A06EE12-720A-4549-BC0F-F3AD6AF70D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A06EE12-720A-4549-BC0F-F3AD6AF70D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A06EE12-720A-4549-BC0F-F3AD6AF70D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +94,7 @@ Global
 		{D9463703-3855-4791-909A-2B230024217C} = {727D3D70-EC8A-47F7-93E0-4F40494F947E}
 		{194EC72A-B77D-48D5-BEC1-E718F742CD46} = {727D3D70-EC8A-47F7-93E0-4F40494F947E}
 		{8DB3861C-38C0-4213-A4BB-8EFBE65C70CD} = {AAF135DD-17BB-4C18-87CD-FF0AE023E7B0}
+		{DF8B79D0-CF0A-4785-9454-FBECB42B42B2} = {2F3B84EB-A90E-400F-8BBE-BCBFA610D13F}
+		{5A06EE12-720A-4549-BC0F-F3AD6AF70D71} = {AAF135DD-17BB-4C18-87CD-FF0AE023E7B0}
 	EndGlobalSection
 EndGlobal

@@ -58,6 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ProductStore.Data\ProductStore.Data.csproj">
+      <Project>{6EA004E6-E6C6-4D1A-A34E-CD2B14760E4D}</Project>
+      <Name>ProductStore.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProductStore.Interface\ProductStore.Interface.csproj">
       <Project>{8DB3861C-38C0-4213-A4BB-8EFBE65C70CD}</Project>
       <Name>ProductStore.Interface</Name>

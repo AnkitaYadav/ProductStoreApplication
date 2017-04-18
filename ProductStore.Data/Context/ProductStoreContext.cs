@@ -4,8 +4,12 @@ namespace ProductStore.Data
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using Entities.Customers;
+    using Entities.Carts;
+    using Entities.Orders;
+    using Entities.Products;
 
-    public partial class ProductStoreContext : DbContext
+    public partial class ProductStoreContext : DbContext, IProductStoreContext
     {
         public ProductStoreContext()
             : base("name=ProductStoreContext")
